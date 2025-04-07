@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Services.css";
 
 import promocja_wat from "./promocja_wat.jpg";
@@ -14,12 +16,16 @@ function Services() {
             <h1 className="home_title">Dostępne usługi</h1>
           </div>
           <div className="services_buttons">
-            <button className="services_button" id="mapa">
-              MAPA
-            </button>
-            <button className="services_button" id="lista ">
-              WYKAZ lub lista czegoś
-            </button>
+            <Link to="map">
+              <button className="services_button" id="mapa">
+                MAPA
+              </button>
+            </Link>
+            <Link to="militaryunits">
+              <button className="services_button" id="lista">
+                WYKAZ lub lista CZEGOŚ
+              </button>
+            </Link>
           </div>
         </div>
         <div className="services_bottomRight">
