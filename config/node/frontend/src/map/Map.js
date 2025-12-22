@@ -37,9 +37,9 @@ function Map({ units }) {
                 <strong>Adres: </strong>
                 {unit.address}
                 <br />
-                <strong>Telefon: {unit.phone}</strong>
+                <strong>Telefon:</strong> {unit.phone}
                 <br />
-                <strong>Fax: {unit.fax}</strong>
+                <strong>Fax:</strong> {unit.fax}
                 <br />
               </Popup>
             </Marker>
